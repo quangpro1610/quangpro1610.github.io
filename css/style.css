@@ -1,11 +1,3 @@
-/*--
-	Author: W3Layouts
-	Author URL: http://w3layouts.com
-	License: Creative Commons Attribution 3.0 Unported
-	License URL: http://creativecommons.org/licenses/by/3.0/
---*/
-/*-- Reset-Code --*/
-
 body {
 	padding: 0;
 	margin: 0;
@@ -868,7 +860,7 @@ background: linear-gradient(to right, #E684AE, #79CBCA, #77A1D3); /* W3C, IE 10+
 	-o-transition:0.5s all;
 	-ms-transition:0.5s all;
 	-moz-transition:0.5s all;
-	text-transform: capitalize;
+	text-transform: uppercase;
 }
 .simplefilter li.active {
     color: #00c5b5;

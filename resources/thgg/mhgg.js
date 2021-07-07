@@ -98,7 +98,7 @@ function renderHTML2(data) {
     return html;
 }
 
-function renderHTML3(data) {
+function renderShopee(data) {
     var html = '';
     let buttonGet = "";
     let code = "";
@@ -185,7 +185,7 @@ function getShopee() {
                     showPrevious: false,
                     showNext: false,
                     callback: function(data, pagination) {
-                        var html = renderHTML3(data);
+                        var html = renderShopee(data);
                         $('#data-container3').html(html);
                     }
                 })

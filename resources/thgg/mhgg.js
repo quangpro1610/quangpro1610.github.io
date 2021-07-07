@@ -102,7 +102,7 @@ function renderHTML3(data) {
     var html = '';
     let buttonGet = "";
     let code = "";
-    let content = "";
+    let title = "";
 
     $.each(data, function(index, item) {
         if (item.code != '') {
@@ -110,10 +110,16 @@ function renderHTML3(data) {
         } else {
             buttonGet = ` <a href="` + affAuthor + item.link + `" target="_blank" class="read-more get-coupon">Nhận ưu đãi</a>`;
         }
+        
+        let percent = (item.discount_percentage != null) ? item.discount_percentage : 0;
 
-        if (item.content != null) {
-            content = item.content;
+        if (item.shop_name != null) {
+
+            title = `<a href="` + affAuthor + item.link + `" target="_blank"><b>Mã giảm giá Shopee ` + percent + `%, tối đa ` + item.max_value + `đ cho đơn hàng từ ` + item.min_spend + `đ đặt mua sản phẩm tại ` + item.shop_name + ``;
+        } else {
+            title = `<a href="` + affAuthor + item.link + `" target="_blank"><b>Mã giảm giá Shopee ` + percent + `%, tối đa ` + item.max_value + `đ cho đơn hàng từ ` + item.min_spend + ``;
         }
+
         html += `<div class="blog-post hentry index-post post-` + index + `">
                                                 <div class="post-image-wrap">
                                                     <a class="post-image-link" href="` + affAuthor + item.link + `" target="_blank">
@@ -122,7 +128,7 @@ function renderHTML3(data) {
                                                 </div>
                                                 <div class="post-info">
                                                     <h2 class="post-title post-title-fix">
-                                                       <a href="` + affAuthor + item.link + `" target="_blank"><b>Mã giảm giá Shopee ` + item.discount_percentage + `%, tối đa ` + item.max_value + `đ cho đơn hàng từ ` + item.min_spend + `đ đặt mua sản phẩm tại ` + item.shop_name + `
+                                                       `++`
                                                        </b> <span class="label label-danger"><i class="fa fa-clock-o"></i> Hạn sử dụng đến: ` + item.end_time + `</span>
                                                        </a>
                                                     </h2>

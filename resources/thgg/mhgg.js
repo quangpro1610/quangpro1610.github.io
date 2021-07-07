@@ -110,14 +110,13 @@ function renderHTML3(data) {
         } else {
             buttonGet = ` <a href="` + affAuthor + item.link + `" target="_blank" class="read-more get-coupon">Nhận ưu đãi</a>`;
         }
-        
+
         let percent = (item.discount_percentage != null) ? item.discount_percentage : 0;
 
         if (item.shop_name != null) {
-
-            title = `<a href="` + affAuthor + item.link + `" target="_blank"><b>Mã giảm giá Shopee ` + percent + `%, tối đa ` + item.max_value + `đ cho đơn hàng từ ` + item.min_spend + `đ đặt mua sản phẩm tại ` + item.shop_name + ``;
+            title = `<a href="` + affAuthor + item.link + `" target="_blank"><b>Mã giảm giá Shopee ` + percent + `%, tối đa ` + item.max_value + `đ cho đơn hàng từ ` + item.min_spend + `đ đặt mua sản phẩm tại ` + item.shop_name;
         } else {
-            title = `<a href="` + affAuthor + item.link + `" target="_blank"><b>Mã giảm giá Shopee ` + percent + `%, tối đa ` + item.max_value + `đ cho đơn hàng từ ` + item.min_spend + ``;
+            title = `<a href="` + affAuthor + item.link + `" target="_blank"><b>Mã giảm giá Shopee ` + percent + `%, tối đa ` + item.max_value + `đ cho đơn hàng từ ` + item.min_spend;
         }
 
         html += `<div class="blog-post hentry index-post post-` + index + `">

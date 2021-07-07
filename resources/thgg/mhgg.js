@@ -108,7 +108,7 @@ function renderHTML3(data) {
         if (item.code != '') {
             buttonGet = '<a href="javascript:;" onclick="copyCodeOpenLink(' + item.code + ', ' + affAuthor + item.link + ')" class="read-more">Copy Code &amp; nhận ưu đãi</a>';
         } else {
-            buttonGet = '<a href="' + affAuthor + item.link + '" target="_blank" class="read-more get-coupon">Nhận ưu đãi</a>;
+            buttonGet = '<a href="' + affAuthor + item.link + '" target="_blank" class="read-more get-coupon">Nhận ưu đãi</a>';
         }
 
         let percent = (item.discount_percentage != null) ? item.discount_percentage : 0;

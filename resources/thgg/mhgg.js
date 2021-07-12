@@ -59,12 +59,11 @@ function renderHTML2(data) {
 function renderShopee(data) {
     var html = '';
     let buttonGet = "";
-    let code = "";
     let title = "";
 
     $.each(data, function(index, item) {
-        if (item.code != '') {
-            buttonGet = '<a href="javascript:;" onclick="copyCodeOpenLink(' + item.code + ', ' + affAuthor + item.link + ')" class="read-more">Copy Code &amp; nhận ưu đãi</a>';
+        if (item.voucher_code != '' || item.voucher_code != null) {
+            buttonGet = '<a href="javascript:;" onclick="copyCodeOpenLink(' + item.voucher_code + ', ' + affAuthor + item.link + ')" class="read-more">Copy Code &amp; nhận ưu đãi</a>';
         } else {
             buttonGet = '<a href="' + affAuthor + item.link + '" target="_blank" class="read-more get-coupon">Nhận ưu đãi</a>';
         }
@@ -77,7 +76,7 @@ function renderShopee(data) {
             title = '<a href="' + affAuthor + item.link + '" target="_blank"><b>Mã giảm giá Shopee ' + percent + '%, tối đa ' + item.max_value + 'đ cho đơn hàng từ ' + item.min_spend;
         }
 
-        html += '<div class="blog-post hentry index-post post-' + index + '"><div class="post-image-wrap"><a class="post-image-link" href="' + affAuthor + item.link + '" target="_blank"><img alt="' + index + '" class="post-thumb" src="' + item.media + '"></a></div><div class="post-info"><h2 class="post-title post-title-fix">' + title + '</b> <span class="label label-danger"><i class="fa fa-clock-o"></i> Hạn sử dụng đến: '+ item.end_time + '</span> </a></h2><div style="margin-top: 20px;"><b>Điều kiện áp dụng</b>: <i>' + item.usage_terms + '</i></div></div><div>' + code + '</div>' + buttonGet + '</div></div>';
+        html += '<div class="blog-post hentry index-post post-' + index + '"><div class="post-image-wrap"><a class="post-image-link" href="' + affAuthor + item.link + '" target="_blank"><img alt="' + index + '" class="post-thumb" src="' + item.media + '"></a></div><div class="post-info"><h2 class="post-title post-title-fix">' + title + '</b> <span class="label label-danger"><i class="fa fa-clock-o"></i> Hạn sử dụng đến: '+ item.end_time + '</span> </a></h2><div style="margin-top: 20px;"><b>Điều kiện áp dụng</b>: <i>' + item.usage_terms + '</i></div></div>' + buttonGet + '</div></div>';
     });
     return html;
 }

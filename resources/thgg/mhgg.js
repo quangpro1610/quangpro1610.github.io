@@ -21,37 +21,16 @@ function renderHTML1(data) {
     let content = "";
 
     $.each(data, function(index, item) {
-        if (item.code != '') {
-            buttonGet = ` <a href="javascript:;" onclick="copyCodeOpenLink('` + item.code + `', '` + affAuthor + item.link + `')" class="read-more">Copy Code &amp; nhận ưu đãi</a>`;
+        if (item.code != '' || item.code != undefined) {
+            buttonGet = '<a href="javascript:;" onclick="copyCodeOpenLink(' + item.code + ', ' + affAuthor + item.link + ')" class="read-more">Copy Code &amp; nhận ưu đãi</a>';
         } else {
-            buttonGet = ` <a href="` + affAuthor + item.link + `" target="_blank" class="read-more get-coupon">Nhận ưu đãi</a>`;
+            buttonGet = '<a href="' + affAuthor + item.link + '" target="_blank" class="read-more get-coupon">Nhận ưu đãi</a>';
         }
 
         if (item.content != null) {
             content = item.content;
         }
-        html += `<div class="blog-post hentry index-post post-` + index + `">
-                                                <div class="post-image-wrap">
-                                                    <a class="post-image-link" href="` + affAuthor + item.link + `" target="_blank">
-                                                     <img alt="` + index + `" class="post-thumb" src="` + item.icon_url + `">
-                                                    </a>
-                                                </div>
-                                                <div class="post-info">
-                                                    <h2 class="post-title post-title-fix">
-                                                       <a href="` + affAuthor + item.link + `" target="_blank"><b>Mã giảm giá Tiki - Áp dụng ` + item.short_description + `
-                                                       </b> <span class="label label-danger"><i class="fa fa-clock-o"></i> Hạn sử dụng đến: ` + item.end_time + `</span>
-                                                       </a>
-                                                    </h2>
-                                                    <div class="post-meta">
-                                                       <p class="post-tag index-post-tag"><b>Giảm ` + item.discount + `</b></p>
-                                                    </div>
-                                                    <div><b>Điều kiện áp dụng</b>: <i>` + item.description + `</i></div>
-                                                    </div>
-                                                    <div>` + code + `</div>
-                                                    ` + buttonGet + `
-                                                 </div>
-                                            </div>
-                                        `;
+        html += '<div class="blog-post hentry index-post post-' + index + '"><div class="post-image-wrap"><a class="post-image-link" href="' + affAuthor + item.link + '" target="_blank"><img alt="' + index + '" class="post-thumb" src="' + item.icon_url + '"></a></div><div class="post-info"><h2 class="post-title post-title-fix"><a href="' + affAuthor + item.link + '" target="_blank"><b>Mã giảm giá Tiki - Áp dụng ' + item.short_description + '</b><span class="label label-danger"><i class="fa fa-clock-o"></i> Hạn sử dụng đến: ' + item.end_time + '</span></a></h2><div class="post-meta"><p class="post-tag index-post-tag"><b>Giảm ' + item.discount + '</b></p></div><div><b>Điều kiện áp dụng</b>: <i>' + item.description + '</i></div></div><div>' + code + '</div>' + buttonGet + '</div></div>';
     });
     return html;
 }
@@ -64,36 +43,15 @@ function renderHTML2(data) {
 
     $.each(data, function(index, item) {
         if (item.code != '') {
-            buttonGet = ` <a href="javascript:;" onclick="copyCodeOpenLink('` + item.code + `', '` + affAuthor + item.link + `')" class="read-more">Copy Code &amp; nhận ưu đãi</a>`;
+            buttonGet = '<a href="javascript:;" onclick="copyCodeOpenLink(' + item.code + ', ' + affAuthor + item.link + ')" class="read-more">Copy Code &amp; nhận ưu đãi</a>';
         } else {
-            buttonGet = ` <a href="` + affAuthor + item.link + `" target="_blank" class="read-more get-coupon">Nhận ưu đãi</a>`;
+            buttonGet = '<a href="' + affAuthor + item.link + '" target="_blank" class="read-more get-coupon">Nhận ưu đãi</a>';
         }
 
         if (item.content != null) {
             content = item.content;
         }
-        html += `<div class="blog-post hentry index-post post-` + index + `">
-                                                <div class="post-image-wrap">
-                                                    <a class="post-image-link" href="` + affAuthor + item.link + `" target="_blank">
-                                                     <img alt="` + index + `" class="post-thumb" src="` + item.media + `">
-                                                    </a>
-                                                </div>
-                                                <div class="post-info">
-                                                    <h2 class="post-title post-title-fix">
-                                                       <a href="` + affAuthor + item.link + `" target="_blank"><b>Mã giảm giá Lazada ` + item.amount + ` cho đơn hàng từ ` + item.min_spend + `đ đặt mua tại ` + item.shop_name + `
-                                                       </b> <span class="label label-danger"><i class="fa fa-clock-o"></i> Hạn sử dụng đến: ` + item.end_time + `</span>
-                                                       </a>
-                                                    </h2>
-                                                    <div class="post-meta">
-                                                       <p style="font-size: 14px;"><i class="fa fa-shopping-cart"></i> Áp dụng cho đơn hàng từ:  <span style="float: none;text-decoration: line-through;color:red;font-weight: 700;">` + item.price + `&nbsp;₫</span> còn <span style="float: none;color:green;font-weight: 700;">` + item.sale_price + `&nbsp;₫</span> (sử dụng được trên <strong>web</strong> và <strong>app lazada</strong>)</p>
-                                                    </div>
-                                                    <div><b>Sản phẩm khuyến mãi</b>: <i>` + item.title + `</i></div>
-                                                    </div>
-                                                    <div>` + code + `</div>
-                                                    ` + buttonGet + `
-                                                 </div>
-                                            </div>
-                                        `;
+        html += '<div class="blog-post hentry index-post post-' + index + '"><div class="post-image-wrap"><a class="post-image-link" href="' + affAuthor + item.link + '" target="_blank"><img alt="' + index + '" class="post-thumb" src="' + item.media + '"></a></div><div class="post-info"><h2 class="post-title post-title-fix"><a href="' + affAuthor + item.link + '" target="_blank"><b>Mã giảm giá Lazada ' + item.amount + ' cho đơn hàng từ ' + item.min_spend + 'đ đặt mua tại ' + item.shop_name + '</b> <span class="label label-danger"><i class="fa fa-clock-o"></i> Hạn sử dụng đến: ' + item.end_time + '</span></a></h2><div class="post-meta"><p style="font-size: 14px;"><i class="fa fa-shopping-cart"></i> Áp dụng cho đơn hàng từ:  <span style="float: none;text-decoration: line-through;color:red;font-weight: 700;">'+ item.price + '&nbsp;₫</span> còn <span style="float: none;color:green;font-weight: 700;">' + item.sale_price + '&nbsp;₫</span> (sử dụng được trên <strong>web</strong> và <strong>app lazada</strong>)</p></div><div><b>Sản phẩm khuyến mãi</b>: <i>'+ item.title + '</i></div></div><div>' + code + '</div>' + buttonGet + '</div></div>';
     });
     return html;
 }
@@ -125,10 +83,9 @@ function renderShopee(data) {
 }
 
 function getTiki() {
-    $("#mgg").append(`<p style="color:green;text-align:center;background:#fff"><img src="https://bestsales.vn/uploads/loading.gif" style="width:200px;display:block;margin:auto" alt="đang chờ"/><br/> <b>Đang tải dữ liệu....</b> </p>`);
+    $("#mgg").append('<p style="color:green;text-align:center;background:#fff"><img src="https://bestsales.vn/uploads/loading.gif" style="width:200px;display:block;margin:auto" alt="đang chờ"/><br/> <b>Đang tải dữ liệu....</b> </p>');
     if ($("#txtMgg").val()) {
         $.get(linkJson1, function(respone, status) {
-            //console.log(respone);
             var data = respone;
             if (data) {
                 $("#mgg").empty();
@@ -151,7 +108,6 @@ function getTiki() {
 function getLazada() {
     if ($("#txtMgg").val()) {
         $.get(linkJson2, function(respone, status) {
-            //console.log(respone);
             var data = respone;
             if (data) {
                 $("#mgg").empty();
@@ -174,7 +130,6 @@ function getLazada() {
 function getShopee() {
     if ($("#txtMgg").val()) {
         $.get(linkJson3, function(respone, status) {
-            //console.log(respone);
             var data = respone;
             if (data) {
                 $("#mgg").empty();
@@ -195,7 +150,6 @@ function getShopee() {
 }
 
 $(function() {
-
     getTiki();
     getShopee();
     getLazada();

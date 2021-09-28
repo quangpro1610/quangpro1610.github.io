@@ -37,7 +37,7 @@
     display: block;
 }
 .comment-content em:before {
-    content: &#39;\f10d&#39;;
+    content: "\f10d";
     display: inline-block;
     font-family: FontAwesome;
     font-style: normal;
@@ -49,7 +49,7 @@
     color: #888;
 }
 .comment-content em:after {
-    content: &#39;\f10e&#39;;
+    content: "\f10e";
     display: inline-block;
     font-family: FontAwesome;
     font-style: normal;
@@ -81,19 +81,19 @@
     margin-right: 5px;
 }
 .alert-info .headline .fa::before{
-  content: &quot;\f05a&quot;;
+  content: "\f05a";
 }
 .alert-success .headline .fa::before{
-  content: &quot;\f058&quot;;
+  content: "\f058";
 }
 .alert-warning .headline .fa::before{
-  content: &quot;\f071&quot;;
+  content: "\f071";
 }
 .alert-update .headline .fa::before{
-  content: &quot;\f05a&quot;;
+  content: "\f05a";
 }
 .alert-danger .headline .fa::before{
-  content: &quot;\f06a&quot;;
+  content: "\f06a";
 }
 .alert-success {
   background-color: #5cb85c;
@@ -116,10 +116,10 @@
 }
 .alert .alert-link:hover{text-decoration: underline;}
 @media only screen and (max-width: 767px) {
-  .copyright &gt; div, .mode{float:none;}
+  .copyright > div, .mode{float:none;}
   .footer-sections{padding-top:0;padding-bottom:0;}
   .sect-left{margin-bottom:0;}
   #HTML2 .widget-content{text-align: center;background-color: transparent;}
-  #header-inner&gt;a{margin: 0 auto;max-width: 200px;}
+  #header-inner > a{margin: 0 auto;max-width: 200px;}
   /*.nav-wrapper{background-color: #27ae60;}*/
 }

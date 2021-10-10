@@ -13,7 +13,7 @@
 .toggle,.mode::before,.dark .mode::after{background:#ccc}
 .dark .toggle{background:#444}
 .auto .toggle{background:#6d6!important}
-.toggle::before,.mode::before,.mode::after{position:absolute;content:&#39;&#39;}
+.toggle::before,.mode::before,.mode::after{position:absolute;content:"";}
 .toggle::before{top:1px;left:1px;transition:.4s;background:#fff;width:18px;height:18px}
 .auto .toggle::before{left:14px}
 .toggle::before,.mode,.mode::before,.mode::after{border-radius:50%}

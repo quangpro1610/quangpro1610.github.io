@@ -4,9 +4,9 @@
     --second: #f8f9fa url('https://2.bp.blogspot.com/-3VhuOh_WTsk/VlJ5nmVDcEI/AAAAAAAAB_8/urctULgz6k0/s0-r/bg.png') repeat scroll top left;
     --primary: #2c3e50;
     --secondary: #27ae60;
-    --font: 'SVN-Gotham',sans-serif;
-    --title: 'SVN-Gotham',sans-serif;
-    --text: 'SVN-Gotham',sans-serif;
+    --font: 'Be Vietnam Pro',sans-serif;
+    --title: 'Be Vietnam Pro',sans-serif;
+    --text: 'Be Vietnam Pro',sans-serif;
 }
 
 /*---------Reset Style---------*/
@@ -22,7 +22,7 @@ img{border:none;position:relative}
 
 /*------- Body -------*/
 /* {font-family: inconsolata, monospace;}*/
-* {font-family: 'SVN-Gotham',sans-serif}
+* {font-family: 'Be Vietnam Pro',sans-serif}
 body{background:var(--second);color:#494949;font-size:14px;font-family:var(--font);line-height:22px;word-wrap:break-word;}
 body::-webkit-scrollbar {width: 10px;}
 body::-webkit-scrollbar-track{-webkit-box-shadow: inset 0 0 6px rgba(39, 174, 96, 0.8);}
@@ -1052,7 +1052,7 @@ text-align:center;
 .dark .sidebar .widget-title{margin-bottom: 0;}
 /*Source bai viet*/
 .data-reup{position:relative;padding-top:15px;float:right;clear:both;margin-bottom:15px}
-.reup-link{font:600 12px/14px Arial;color:#888!important;box-sizing:border-box;background:#f2f2f2;border-radius:100px;padding:9px 11px;display:block;width:auto}
+.reup-link{font:600 12px/14px Be Vietnam Pro;color:#888!important;box-sizing:border-box;background:#f2f2f2;border-radius:100px;padding:9px 11px;display:block;width:auto}
 .reupname{color:#444}
 .data-reup i{padding-left:6px}
 .tooltip > .links{color:#fff;background:#222}

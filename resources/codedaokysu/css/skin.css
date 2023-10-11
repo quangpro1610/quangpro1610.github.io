@@ -670,7 +670,7 @@ span.right {float:center;display:inline-block;padding:10px 5px;}.read-time{paddi
 .comments .comment-block{padding:10px;box-shadow: none;border: 1px solid #eee;border-radius: 2px;}
 .comments .comment-block,.comments .comments-content .comment-replies{margin-left:47px;margin-top: 0;}
 .comments .comments-content .inline-thread{padding:0;}
-.comments .comments-content .comment-header{font-size:14px;border-bottom:1px dashed #27ae60;padding:0 0 3px;}
+.comments .comments-content .comment-header{font-size:14px;border-bottom:none;padding:0 0 3px;}
 .comments .comments-content .user {font-style: normal;font-weight: 500;}
 .comments .comments-content .icon.blog-author {font-weight: 400;}
 .comments .comments-content .comment-content {text-align: justify;font-size: 14px;line-height: 1.4em;}
@@ -729,13 +729,13 @@ span.right {float:center;display:inline-block;padding:10px 5px;}.read-time{paddi
 
 /*Thread Comment*/
 #comments{overflow:hidden}
-#comments h4{display:inline;padding:10px;line-height:40px}
+#comments h4{display:inline;padding:10px;line-height:40px;border-radius: 10px;}
 #comments h4,.comments .comment-header,.comments .comment-thread.inline-thread .comment{position:relative}
 #comments h4{background:#27ae60;}
 #comments h4,.comments .user a,.comments .continue a{font-size:16px}
 #comments h4,.comments .continue a{font-weight:normal;color:#fff}
 .comments .continue a{color:#27ae60}
-#comments h4:after{content:"";position:absolute;bottom:-10px;left:45px;border-top:10px solid #27ae60;border-left:20px solid transparent;width:0;height:0;line-height:0}
+#comments h4:after{content:"";position:absolute;bottom:-10px;left:45px;border-top:10px solid #27ae60;border-left:20px solid transparent;width:0;height:0;line-height:0;padding-top: 1px;}
 #comments .avatar-image-container img{border:0}
 .comment-thread{color:#111}
 .comment-thread a{color:#777}
@@ -743,8 +743,8 @@ span.right {float:center;display:inline-block;padding:10px 5px;}.read-time{paddi
 .comment-thread .comment-content a,.comments .user a,.comments .comment-thread.inline-thread .user a{color:#27ae60}
 .comments .avatar-image-container,.comments .avatar-image-container img{width:48px;max-width:48px;height:48px;max-height:48px}
 .comments .comment-block,.comments .comments-content .comment-replies,.comments .comment-replybox-single{margin-left:60px}
-.comments .comment-block,.comments .comment-thread.inline-thread .comment{border: 1px dashed #27ae60;background:#ddfcff;padding:10px;border-radius: 0;}
-.comments .comments-content .comment{margin:15px 0 0;padding:0;width:100%;line-height:1em}
+.comments .comment-block,.comments .comment-thread.inline-thread .comment{border: none;background:none;padding:10px;border-radius: 0;}
+.comments .comments-content .comment{margin:15px 0 0;padding:0;width:100%;line-height:1em;border-bottom: 1px solid #ddd;padding-bottom: 15px;padding-top: 15px;}
 .comments .comments-content .inline-thread{padding:0 0 0 20px}
 .comments .comments-content .comment-replies{margin-top:0}
 .comments .comment-content{padding:5px 0;line-height:1.4em}

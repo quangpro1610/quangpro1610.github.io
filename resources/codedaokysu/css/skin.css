@@ -745,7 +745,7 @@ span.right {float:center;display:inline-block;padding:10px 5px;}.read-time{paddi
 .comments .comment-block,.comments .comments-content .comment-replies,.comments .comment-replybox-single{margin-left:60px}
 .comments .comment-block,.comments .comment-thread.inline-thread .comment{border: none;background:none;padding:10px;border-radius: 0;}
 .comments .comments-content .comment{margin:15px 0 0;padding:0;width:100%;line-height:1em;border-bottom: 1px solid #ddd;padding-bottom: 15px;padding-top: 15px;}
-.comments .comments-content .inline-thread{padding:0 0 0 20px}
+.comments .comments-content .inline-thread{padding:0;}
 .comments .comments-content .comment-replies{margin-top:0}
 .comments .comment-content{padding:5px 0;line-height:1.4em}
 .comments .comment-thread.inline-thread{position:relative;background:transparent}
@@ -979,26 +979,29 @@ div[itemprop="review"]{display:none;}
 #Feed2 ul li a:hover{text-decoration: underline;}
 .comments .comment .comment-actions a.comment-reply,
 .comments .comment .comment-actions a.comment-reply:hover{
-padding: 5px 10px;
-background-color: #27ae60;
-color: #fff;
-border-radius: 3px;
-border-color: #27ae60;
+    padding: 5px 10px;
+    background-color: #27ae60;
+    color: #fff;
+    border-radius: 3px;
+    border-color: #27ae60;
+    display: inline-block;
+    vertical-align: middle;
 }
 .comments .comment .comment-actions a.comment-reply:hover{opacity:.7;}
 .comments .item-control.blog-admin a,
 .comments .item-control.blog-admin a:hover{
-padding: 5px 10px;
-background-color: #d66;
-color: #fff;
-border-radius: 3px;
-border-color: #d66;
+    padding: 5px 10px;
+    background-color: #d66;
+    color: #fff;
+    border-radius: 3px;
+    border-color: #d66;
+    display: inline-block;
 }
 .comments .item-control.blog-admin a:hover{opacity:.7;}
 .comments .comment-block .user a:hover{text-decoration: underline;}
 .comment-thread .comment-actions.secondary-text{
-display: block;
-text-align: right;
+    display: block;
+    text-align: left;
 }
 /*dark-theme*/
 .dark #outer-wrapper{background: #183d5d;box-shadow: none;}

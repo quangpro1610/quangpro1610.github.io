@@ -676,7 +676,7 @@ span.right {float:center;display:inline-block;padding:10px 5px;}.read-time{paddi
 .comments .comments-content .comment-content {text-align: justify;font-size: 14px;line-height: 1.4em;}
 .comments .comment .comment-actions a {margin-right: 5px;color: #757575;background-color: #f9f9f9;border: 1px solid #f2f2f2;padding: 2px 5px;font-size: 11px;border-radius: 2px;}
 .comments .comment .comment-actions a:hover{border-color: #e2e2e2;text-decoration:none;}
-.comments .comments-content .datetime{margin-left:0;float:right;font-size:11px;margin-right: 20px;}
+.comments .comments-content .datetime{margin-left:0;float:right;font-size:11px;margin-right: 20px;display: none;}
 .comments .comments-content .comment-header a:hover{color:var(--secondary)}
 .comments .thread-toggle {margin-bottom: 4px;}
 .comments .comments-content .comment-thread {margin: 4px 0;}
@@ -736,7 +736,7 @@ span.right {float:center;display:inline-block;padding:10px 5px;}.read-time{paddi
 #comments h4,.comments .continue a{font-weight:normal;color:#fff}
 .comments .continue a{color:#27ae60}
 #comments h4:after{content:"";position:absolute;bottom:-10px;left:45px;border-top:10px solid #27ae60;border-left:20px solid transparent;width:0;height:0;line-height:0;padding-top: 1px;}
-#comments .avatar-image-container img{border:0}
+#comments .avatar-image-container img{border-radius: 50%;}
 .comment-thread{color:#111}
 .comment-thread a{color:#777}
 .comment-thread ol{margin:0 0 20px}

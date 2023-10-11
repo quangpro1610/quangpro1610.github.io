@@ -749,7 +749,7 @@ span.right {float:center;display:inline-block;padding:10px 5px;}.read-time{paddi
 .comments .comments-content .comment-replies{margin-top:0}
 .comments .comment-content{padding:5px 0;line-height:1.4em}
 .comments .comment-thread.inline-thread{position:relative;background:transparent}
-.comments .comment-thread.inline-thread .comment{display: block;width:auto}
+.comments .comment-thread.inline-thread .comment{width:auto}
 .comments .comment-thread.inline-thread .comment .comment-block{border:0;background:transparent;padding:0}
 .comments .comment-thread.inline-thread .comment-block{margin-left:15px}
 .comments .comment-thread.inline-thread .user a{font-size:13px}

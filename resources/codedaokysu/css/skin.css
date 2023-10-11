@@ -685,7 +685,7 @@ span.right {float:center;display:inline-block;padding:10px 5px;}.read-time{paddi
 .comments .comment-replybox-thread {margin: 0;}
 .comments .comments-content .comment-replies .icon.user,
 .comments .comments-content .icon.blog-author{
-    position: absolute;
+    position: static;
     top: 0;
     left: 100px;
     margin: 0;
@@ -743,7 +743,7 @@ span.right {float:center;display:inline-block;padding:10px 5px;}.read-time{paddi
 .comment-thread .comment-content a,.comments .user a,.comments .comment-thread.inline-thread .user a{color:#27ae60}
 .comments .avatar-image-container,.comments .avatar-image-container img{width:48px;max-width:48px;height:48px;max-height:48px}
 .comments .comment-block,.comments .comments-content .comment-replies,.comments .comment-replybox-single{margin-left:60px}
-.comments .comment-block,.comments .comment-thread.inline-thread .comment{border: none;background:none;padding:10px;border-radius: 0;}
+.comments .comment-block,.comments .comment-thread.inline-thread .comment{border: none;background:#F0F2F5;padding:10px;border-radius: 18px;display: inline-block;margin-left: 15px;}
 .comments .comments-content .comment{margin:15px 0 0;padding:0;width:100%;line-height:1em;border-bottom: 1px solid #ddd;padding-bottom: 15px;padding-top: 15px;}
 .comments .comments-content .inline-thread{padding:0;}
 .comments .comments-content .comment-replies{margin-top:0}
@@ -751,7 +751,7 @@ span.right {float:center;display:inline-block;padding:10px 5px;}.read-time{paddi
 .comments .comment-thread.inline-thread{position:relative;background:transparent}
 .comments .comment-thread.inline-thread .comment{width:auto}
 .comments .comment-thread.inline-thread .comment .comment-block{border:0;background:transparent;padding:0}
-.comments .comment-thread.inline-thread .comment-block{margin-left:48px}
+.comments .comment-thread.inline-thread .comment-block{margin-left:15px}
 .comments .comment-thread.inline-thread .user a{font-size:13px}
 .comments .comment-thread.inline-thread .avatar-image-container,
 .comments .comment-thread.inline-thread .avatar-image-container img{width:36px;max-width:36px;height:36px;max-height:36px;border-radius: 1000px;transition: all .2s ease-in-out;}
@@ -980,10 +980,10 @@ div[itemprop="review"]{display:none;}
 .comments .comment .comment-actions a.comment-reply,
 .comments .comment .comment-actions a.comment-reply:hover{
     padding: 5px 10px;
-    background-color: #27ae60;
-    color: #fff;
+    background-color: transparent;
+    color: #000;
     border-radius: 3px;
-    border-color: #27ae60;
+    border-color: transparent;
     display: inline-block;
     vertical-align: middle;
 }
@@ -991,10 +991,10 @@ div[itemprop="review"]{display:none;}
 .comments .item-control.blog-admin a,
 .comments .item-control.blog-admin a:hover{
     padding: 5px 10px;
-    background-color: #d66;
-    color: #fff;
+    background-color: transparent;
+    color: #d66;
     border-radius: 3px;
-    border-color: #d66;
+    border-color: transparent;
     display: inline-block;
 }
 .comments .item-control.blog-admin a:hover{opacity:.7;}

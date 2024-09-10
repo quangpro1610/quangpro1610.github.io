@@ -369,7 +369,7 @@ a.button {color:#fff}
 .widget .post-body ul,.widget .post-body ol{line-height:1.5;font-weight:400}
 .button::after{content:"";display:block;clear:both;}
 .widget .post-body li{margin:5px 0;padding:0;line-height:1.5}
-.post-body ul li:before{content:"\f105";margin-right:5px;font-family:fontawesome}
+/*.post-body ul li:before{content:"\f105";margin-right:5px;font-family:fontawesome}*/
 #contact{background-color:#fff;margin:30px 0!important}
 #contact .contact-form-widget{max-width:100%!important}
 #contact .contact-form-name,#contact .contact-form-email,#contact .contact-form-email-message{background-color:#FFF;border:1px solid #eee;border-radius:3px;padding:10px;margin-bottom:10px!important;max-width:100%!important}
